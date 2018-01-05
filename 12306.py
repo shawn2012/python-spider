@@ -73,7 +73,7 @@ class huoche(object):
 					print(u"循环点击查询... 第 %s 次" % count)
 					# sleep(1)
 					try:
-						self.driver.find_by_text(u"预订")[self.order - 1].click()
+						self.driver.find_by_text(u"预订")[self.order].click()
 					except Exception as e:
 						print(e)
 						print(u"还没开始预订")
@@ -102,6 +102,11 @@ class huoche(object):
 
 			print(u"提交订单...")
 			sleep(1)
+			
+			for index in range(len(self.users)):
+				self.driver.find_by_id('seatType_' + str(index + 1)).first.select(self.pz)
+				self.driver.find_by_id('ticketType_' + str(index + 1)).first.select(self.xb)
+			
 			self.driver.find_by_text(self.pz).click()
 			self.driver.find_by_id('').select(self.pz)
 			# sleep(1)
