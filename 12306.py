@@ -103,14 +103,13 @@ class huoche(object):
 			print(u"提交订单...")
 			sleep(1)
 			
-			for index in range(len(self.users)):
-				self.driver.find_by_id('seatType_' + str(index + 1)).first.select(self.pz)
-				self.driver.find_by_id('ticketType_' + str(index + 1)).first.select(self.xb)
+			print(u"选择成人票...")
+			for pz in self.driver.find_option_by_text(self.pz):
+				pz.click()
 			
-			self.driver.find_by_text(self.pz).click()
-			self.driver.find_by_id('').select(self.pz)
-			# sleep(1)
-			self.driver.find_by_text(self.xb).click()
+			print(u"选择座位...")
+			for xb in self.driver.find_option_by_text(self.xb):
+				xb.click()
 			sleep(1)
 			self.driver.find_by_id('submitOrder_id').click()
 			print(u"开始选座...")
