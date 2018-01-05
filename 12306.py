@@ -14,8 +14,8 @@ class huoche(object):
 	username = u"xxx"
 	passwd = u"xxx"
 	# cookies值得自己去找, 下面两个分别是沈阳, 哈尔滨
-	starts = u"%u6C88%u9633%2CSYT"
-	ends = u"%u54C8%u5C14%u6EE8%2CHBB"
+	starts = u"%u6DF1%u5733%2CSZQ"
+	ends = u"%u66F2%u9756%2CQJM"
 	
 	# 时间格式2018-01-19
 	dtime = u"2018-01-19"
