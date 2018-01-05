@@ -20,7 +20,7 @@ class huoche(object):
 	# 时间格式2018-02-10
 	dtime = u"2018-02-10"
 	# 车次，选择第几趟，0则从上之下依次点击
-	order = 0
+	order = 1
 	###乘客名
 	users = [u"xxx",u"xxx"]
 	##席位
