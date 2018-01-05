@@ -13,12 +13,12 @@ class huoche(object):
 	#用户名，密码
 	username = u"xxx"
 	passwd = u"xxx"
-	# cookies值得自己去找, 下面两个分别是沈阳, 哈尔滨
+	# cookies值得自己去找, 下面两个分别是深圳, 曲靖
 	starts = u"%u6DF1%u5733%2CSZQ"
 	ends = u"%u66F2%u9756%2CQJM"
 	
-	# 时间格式2018-01-19
-	dtime = u"2018-01-19"
+	# 时间格式2018-02-10
+	dtime = u"2018-02-10"
 	# 车次，选择第几趟，0则从上之下依次点击
 	order = 0
 	###乘客名
